@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import { products } from "../data/products";
+import Link from "next/link";
+
 
 export default function Products() {
   return (
@@ -15,11 +17,11 @@ export default function Products() {
                 }}
               ></div>
               <h2 className="text-sm lg:text-base mt-2">
-                <a className="text-base font-bold" href="./productPage.html">
+                <Link className="text-base font-bold" href="./productPage.html">
                   {product?.title}
-                </a>
+                </Link>
                 <span className="text-[#919090]">
-                  <a href="./category.html">({product?.category})</a>
+                  <Link href="./category.html">({product?.category})</Link>
                 </span>
               </h2>
               <p className="text-[#919090] text-sm">
