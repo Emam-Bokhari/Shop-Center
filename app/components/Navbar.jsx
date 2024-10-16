@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
               width={20}
               height={20}
             />
-            <a href="./index.html">
+            <Link href="./index.html">
               <Image
                 src="/lws-logo-black.svg"
                 className="h-10"
@@ -22,7 +23,7 @@ export default function Navbar() {
                 width={118}
                 height={40}
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex items-center justify-end gap-2 lg:gap-5 lg:w-4/12">
