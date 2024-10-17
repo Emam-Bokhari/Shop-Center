@@ -2,6 +2,12 @@ import { products } from "@/app/data/products";
 import Image from "next/image";
 import { Fragment } from "react";
 
+export function generateStaticParams() {
+  return products?.map((product) => ({
+    id: product?.id,
+  }));
+}
+
 export default function ProductDetails({ params }) {
   const { id } = params;
   const product = products?.find((product) => product?.id == id);
