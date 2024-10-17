@@ -24,7 +24,7 @@ export default function Category() {
             <button
               onClick={() => setSelectedCategory(category)}
               key={category}
-              className="hover:border-b border-black block h-6 box-border mt-4"
+              className={`hover:border-b border-black block h-6 box-border mt-4 ${selectedCategory===category?"text-red-500 font-medium ":""}`}
             >
               {category}
             </button>
