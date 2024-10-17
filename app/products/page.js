@@ -23,7 +23,7 @@ export default function Products() {
                   {product?.title}
                 </Link>
                 <span className="text-[#919090]">
-                  <Link href={`/products/${product?.category}`}>
+                  <Link href="/category">
                     ({product?.category})
                   </Link>
                 </span>
