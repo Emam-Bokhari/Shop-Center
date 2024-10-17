@@ -4,7 +4,7 @@ import { Fragment } from "react";
 
 export function generateStaticParams() {
   return products?.map((product) => ({
-    id: product?.id,
+    id: product.id,
   }));
 }
 
