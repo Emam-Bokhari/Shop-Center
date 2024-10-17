@@ -15,7 +15,7 @@ export default function Navbar() {
               width={20}
               height={20}
             />
-            <Link href="./index.html">
+            <Link href="/">
               <Image
                 src="/lws-logo-black.svg"
                 className="h-10"
